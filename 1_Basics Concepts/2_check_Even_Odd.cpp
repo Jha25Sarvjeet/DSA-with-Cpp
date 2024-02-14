@@ -4,14 +4,26 @@ using namespace std;
 int main()
 {
     int num;
-    cout<<"enter number to check"<<endl;
-    cin>>num;
-    if(num&1){
-        cout<<num<<" is odd"<<endl;
+    cout << "enter number to check" << endl;
+    cin >> num;
+    // first approach
+    if (num & 1)
+    {
+        cout << num << " is odd" << endl;
     }
-    else{
-        cout<<num<<" is even"<<endl;
+    else
+    {
+        cout << num << " is even" << endl;
     }
+    // second approach
+    // if (num % 2 != 0)
+    // {
+    //     cout << num << " is odd" << endl;
+    // }
+    // else
+    // {
+    //     cout << num << " is even" << endl;
+    // }
 
     return 0;
 }
