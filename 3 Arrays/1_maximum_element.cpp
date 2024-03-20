@@ -3,14 +3,14 @@
 using namespace std;
 
 int largestElement(vector<int> &arr, int n)
-{   //  first  approach********************************
+{   //  first  approach********************************optimal solution
     // int max=arr[0];
     // for(int i=0;i<n;i++){
     //     if(arr[i]>max)
     //         max=arr[i];
     // }
     // return max;
-    // second approach*********************************
+    // second approach*********************************brute force approach
     sort(arr.begin(), arr.end());
     return arr[n - 1];
 }
