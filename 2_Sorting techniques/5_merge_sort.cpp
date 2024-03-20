@@ -51,7 +51,7 @@ void mergeSort(vector<int> &arr, int s, int e)
 }
 int main()
 {
-    vector<int> arr = {4, 5, 1, 3, 9, 7, 0, -9};
+    vector<int> arr = {4, 5, 1, 3,0,0,0,0, 9, 7, 0, -9};
     cout << "array before sorting" << endl;
     for (auto i : arr)
         cout << i << " ";
