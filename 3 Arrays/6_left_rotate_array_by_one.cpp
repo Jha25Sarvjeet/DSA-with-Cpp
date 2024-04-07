@@ -10,13 +10,13 @@ void leftRotateByOne(int arr[], int n)
     }
     arr[n - 1] = temp;
 }
-void print(int arr[],int n){
-    for (int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+    void print(int arr[],int n){
+        for (int i=0;i<n;i++){
+            cout<<arr[i]<<" ";
 
+        }
+        cout<<endl;
     }
-    cout<<endl;
-}
 int main()
 {
     int arr[]={2,1,5,6,9};
