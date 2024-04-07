@@ -39,25 +39,27 @@ using namespace std;
 // }
 
 // optimal approach
-void rotate(vector<int>&arr,int s,int e){
-    if(s>=e){
+void rotate(vector<int> &arr, int s, int e)
+{
+    if (s >= e)
+    {
         return;
-
     }
-    
-    while(s<=e){
-        swap(arr[s++],arr[e--]);
+
+    while (s <= e)
+    {
+        swap(arr[s++], arr[e--]);
     }
 }
 void leftRotateBy_k_place(vector<int> &arr, int k)
 {
     int n = arr.size();
-    //rotating first k element
-    rotate(arr,0,k-1);
-    //rotating last n-k element
-    rotate(arr,k,n-1);
-    //roatating entire array
-    rotate(arr,0,n-1);    
+    // rotating first k element
+    rotate(arr, 0, k - 1);
+    // rotating last n-k element
+    rotate(arr, k, n - 1);
+    // roatating entire array
+    rotate(arr, 0, n - 1);
 }
 void print(vector<int> arr, int n)
 {
