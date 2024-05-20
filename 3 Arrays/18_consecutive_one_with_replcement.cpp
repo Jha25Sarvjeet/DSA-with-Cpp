@@ -29,7 +29,7 @@ int consecutive(int arr[], int k, int n)
             {
                 ans = max(ans, j - i);//update answer
                 //move i to next zero 
-                while (arr[i] != 0)
+                while (i<j && arr[i] != 0)
                 {
 
                     i++;
@@ -55,8 +55,8 @@ int consecutive(int arr[], int k, int n)
 
 int main()
 {
-    int arr[] = {1, 0, 0, 1, 0, 1, 0, 1, 0, 1};
-    int res = consecutive(arr, 2, 10);
+    int arr[] = {1,1,1,0,0,0,1,1,1,1,0};
+    int res = consecutive(arr, 2, 11);
     cout << res << endl;
 
     return 0;
