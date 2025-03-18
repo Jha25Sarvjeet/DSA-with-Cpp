@@ -1,18 +1,34 @@
 #include <bits/stdc++.h>
 #include <iostream>
 using namespace std;
+// iterative approach
+
+// void bubbleSort(int arr[], int n)
+// {
+//     for (int i = 0; i < n - 1; i++)
+//     {
+//         for (int j = 1; j < n - i; j++)
+//         {
+//             if (arr[j] < arr[j - 1])
+//             {
+//                 swap(arr[j], arr[j - 1]);
+//             }
+//         }
+//     }
+// }
+
+// recursive approach
 void bubbleSort(int arr[], int n)
 {
-    for (int i = 0; i < n - 1; i++)
+    if(n==1)return;
+    for (int j = 1; j < n; j++)
     {
-        for (int j = 1; j < n - i; j++)
+        if (arr[j] < arr[j - 1])
         {
-            if (arr[j] < arr[j - 1])
-            {
-                swap(arr[j], arr[j - 1]);
-            }
+            swap(arr[j], arr[j - 1]);
         }
     }
+    bubbleSort(arr,n-1);
 }
 int main()
 {
