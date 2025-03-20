@@ -5,9 +5,9 @@ using namespace std;
 bool checkSorted(int arr[], int n)
 {
     int count = 0;
-    for (int i = 1; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] < arr[i - 1])
+        if (arr[i] > arr[(i+1)%n])
         {
             count++;
         }
@@ -19,7 +19,7 @@ bool checkSorted(int arr[], int n)
 }
 int main()
 {
-    int arr[] = {3,4,5,1,2};
+    int arr[] = {3,4,5,1,2,6};
     int n = sizeof(arr) / sizeof(arr[0]);
     bool sortOrNot = checkSorted(arr, n);
     if (sortOrNot)
