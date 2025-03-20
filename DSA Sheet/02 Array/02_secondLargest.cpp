@@ -19,7 +19,7 @@ int secondLargest(int arr[], int n)
             sLargest=largest;
             largest=arr[i];
         }
-        if(arr[i]>sLargest && arr[i]<largest){
+        else if(arr[i]>sLargest && arr[i]!=largest){
             sLargest=arr[i];
         }
     
